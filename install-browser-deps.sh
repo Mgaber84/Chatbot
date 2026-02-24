@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# Install system dependencies required for headless Chromium / Puppeteer / Playwright
+# Install system dependencies and Scrapling for headless browser scraping
 set -euo pipefail
 
+# System libraries required by Chromium / Playwright
 apt-get update
 apt-get install -y \
     libnspr4 \
@@ -20,3 +21,7 @@ apt-get install -y \
     libasound2t64 \
     libpango-1.0-0 \
     libcairo2
+
+# Install Scrapling with all extras and download browser binaries
+pip install "scrapling[all]"
+scrapling install
