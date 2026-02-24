@@ -25,3 +25,7 @@ apt-get install -y \
 # Install Scrapling with all extras and download browser binaries
 pip install "scrapling[all]"
 scrapling install
+
+# Install Camoufox (stealth browser) with GeoIP support and fetch its binary
+pip install -U "camoufox[geoip]"
+python3 -m camoufox fetch
