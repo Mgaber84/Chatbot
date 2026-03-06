@@ -1,0 +1,14 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "Chatbot application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-test": "snyk test",
+    "snyk-monitor": "snyk monitor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
