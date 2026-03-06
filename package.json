@@ -1,0 +1,12 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "Chatbot project",
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "release": "npm version patch && npm run changelog && git push --follow-tags"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^5.0.0"
+  }
+}
